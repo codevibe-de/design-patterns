@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+interface SomeInterface {
+    {abstract} +init()
+}
+interface SubInterface {
+    {abstract} +getName() : String
+}
+
+SomeInterface <|-- SubInterface
+
+abstract class AbstractClass {
+    -name: String
+    +getName() : String
+    {abstract} +convert(x:int) : int
+}
+
+SubInterface <|.. AbstractClass
+
+class ConcreteClass {
+    -factor: float
+    -helper: Helper
+    +init()
+    +convert(x:int) : int
+}
+
+AbstractClass <|-- ConcreteClass
+
+class Helper
+
+ConcreteClass -right-> Helper
+
+@enduml
