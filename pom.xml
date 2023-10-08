@@ -13,6 +13,7 @@
         <module>p00.00-factory_method</module>
         <module>e01.01-scanner</module>
         <module>x01-uml</module>
+        <module>p00.00-flyweight</module>
     </modules>
 
     <properties>
