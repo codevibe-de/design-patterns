@@ -21,15 +21,19 @@ SubInterface <|.. AbstractClass
 
 class ConcreteClass {
     -factor: float
-    -helper: Helper
     +init()
     +convert(x:int) : int
 }
 
 AbstractClass <|-- ConcreteClass
+AbstractClass -right- Helper
 
-class Helper
+interface Helper {
+    {abstract} +calculate(x:int) : int
+}
+class HelperImpl extends Helper {
+    +calculate(x:int) : int
+}
 
-ConcreteClass -right-> Helper
 
 @enduml
