@@ -1,10 +1,12 @@
 package creational.factory_method;
 
+import java.util.List;
+
 @SuppressWarnings("unused")
 public interface Container {
 
-    String getContents();
+    List<String> contents();
 
-    float getPostage();
+    float postage();
 
 }

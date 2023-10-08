@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Forrest {
 
-    private List<Tree> trees = new ArrayList<>();
+    private final List<Tree> trees = new ArrayList<>();
 
     public void addTree(Tree t) {
         trees.add(t);
