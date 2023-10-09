@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Universe {
+
     private final List<Star> stars = new ArrayList<>();
 
     public void add(Star star) {

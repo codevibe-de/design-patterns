@@ -9,5 +9,7 @@ public class Application {
         for (int i = 0; i < u.size(); i++) {
             System.out.println(u.get(i));
         }
+
+        System.out.println(Star.getStar("a") == Star.getStar("a"));
     }
 }

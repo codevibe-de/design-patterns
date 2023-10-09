@@ -12,6 +12,8 @@ public class Application {
             System.out.println(u.get(i));
         }
 
+        System.out.println("----------------------------------");
+
         final Universe u2 = Universe.getInstance();
         System.out.println(u == u2);
         u2.add(new Star("Castor"));

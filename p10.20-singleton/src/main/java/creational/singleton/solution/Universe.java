@@ -7,6 +7,10 @@ import java.util.List;
 
 public class Universe {
 
+    //
+    // SINGLETON pattern
+    //
+
     private static Universe instance = new Universe();
 
     public static Universe getInstance() {
@@ -15,6 +19,10 @@ public class Universe {
 
     private Universe() {
     }
+
+    //
+    // star management
+    //
 
     private final List<Star> stars = new ArrayList<>();
 

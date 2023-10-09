@@ -1,6 +1,7 @@
 package creational.singleton;
 
 public class Star {
+
     public final String name;
 
     public Star(String name) {

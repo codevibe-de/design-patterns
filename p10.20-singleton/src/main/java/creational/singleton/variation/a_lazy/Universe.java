@@ -16,7 +16,9 @@ public class Universe {
     public static Universe getInstance() {
         if (instance == null) {
             synchronized (Universe.class) {
-                instance = new Universe();
+                if (instance == null) {
+                    instance = new Universe();
+                }
             }
         }
         return instance;
