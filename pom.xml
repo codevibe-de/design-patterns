@@ -14,6 +14,8 @@
         <module>e01.01-scanner</module>
         <module>x01-uml</module>
         <module>p00.00-flyweight</module>
+        <module>p20.01-adapter</module>
+        <module>a00-scratch</module>
     </modules>
 
     <properties>
