@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>p00.00-flyweight</artifactId>
+    <artifactId>p20.60-flyweight</artifactId>
 
     <dependencies>
         <dependency>
