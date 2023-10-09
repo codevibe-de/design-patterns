@@ -4,13 +4,14 @@ import java.util.List;
 
 public abstract class PostalDelivery {
 
-    void send(List<String> contents) {
+    public void send(List<String> contents) {
         int weight = calculateWeight(contents);
         Container container = createContainer(contents, weight);
         billing(container);
         delivery(container);
     }
 
+    // this is the FACTORY METHOD that gives name to this pattern
     abstract protected Container createContainer(List<String> contents, int weight);
 
     private int calculateWeight(List<String> contents) {

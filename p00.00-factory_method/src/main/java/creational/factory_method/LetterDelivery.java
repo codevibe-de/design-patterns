@@ -5,7 +5,7 @@ import java.util.List;
 public class LetterDelivery extends PostalDelivery {
 
     @Override
-    protected Container createContainer(List<String> contents, int weight) {
+    protected Letter createContainer(List<String> contents, int weight) {
         int postage = calculateLetterPostage(weight);
         return new Letter(contents, postage);
     }

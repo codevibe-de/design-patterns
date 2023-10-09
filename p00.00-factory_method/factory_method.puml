@@ -1,5 +1,5 @@
 @startuml
-interface PostalDelivery {
+abstract class PostalDelivery {
     +send(contents:String)
     {abstract} +createPackage(contents:String) : Package
 }
@@ -12,8 +12,8 @@ class ParcelDelivery extends PostalDelivery {
     +createPackage(contents:String) : Parcel
 }
 
-interface Package
-class Letter extends Package
-class Parcel extends Package
+interface Container
+class Letter extends Container
+class Parcel extends Container
 
 @enduml
