@@ -14,12 +14,12 @@ public class Forrest {
 
     public void draw() {
         trees.forEach(t -> {
-            setColor(t.color);
-            drawShape(t.x, t.y, t.shape);
+            setActiveColor(t.color());
+            drawShape(t.x(), t.y(), t.shape());
         });
     }
 
-    private void setColor(Color color) {
+    private void setActiveColor(Color color) {
         // ...
     }
 
