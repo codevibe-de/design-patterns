@@ -17,6 +17,7 @@
         <module>p20.01-adapter</module>
         <module>a00-scratch</module>
         <module>p10.20-singleton</module>
+        <module>p10.30-abstract_factory</module>
     </modules>
 
     <properties>
