@@ -18,6 +18,7 @@
         <module>a00-scratch</module>
         <module>p10.20-singleton</module>
         <module>p10.30-abstract_factory</module>
+        <module>p10.40-builder</module>
     </modules>
 
     <properties>
