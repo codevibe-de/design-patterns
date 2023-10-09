@@ -19,6 +19,7 @@
         <module>p10.20-singleton</module>
         <module>p10.30-abstract_factory</module>
         <module>p10.40-builder</module>
+        <module>p10.50-prototype</module>
     </modules>
 
     <properties>
