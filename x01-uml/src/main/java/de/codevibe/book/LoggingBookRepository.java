@@ -3,9 +3,9 @@ package de.codevibe.book;
 // DECORATOR pattern
 public class LoggingBookRepository implements BookRepository {
 
-    private final LoggingBookRepository decoratedRepository;
+    private final BookRepository decoratedRepository;
 
-    public LoggingBookRepository(LoggingBookRepository decoratedRepository) {
+    public LoggingBookRepository(BookRepository decoratedRepository) {
         this.decoratedRepository = decoratedRepository;
     }
 
