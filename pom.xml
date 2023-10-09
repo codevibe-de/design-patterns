@@ -16,6 +16,7 @@
         <module>p20.60-flyweight</module>
         <module>p20.01-adapter</module>
         <module>a00-scratch</module>
+        <module>p10.20-singleton</module>
     </modules>
 
     <properties>
