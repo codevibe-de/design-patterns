@@ -14,12 +14,13 @@
         <module>e01.01-scanner</module>
         <module>x01-uml</module>
         <module>p20.60-flyweight</module>
-        <module>p20.01-adapter</module>
+        <module>p20.00-adapter-iphone</module>
         <module>a00-scratch</module>
         <module>p10.20-singleton</module>
         <module>p10.30-abstract_factory</module>
         <module>p10.40-builder</module>
         <module>p10.50-prototype</module>
+        <module>p20.01-adapter-heizung</module>
     </modules>
 
     <properties>

@@ -1,7 +1,7 @@
-package structural.adapter.solution;
+package structural.adapter.iphone.solution;
 
-import structural.adapter.LightningPlug;
-import structural.adapter.TrsPlug;
+import structural.adapter.iphone.LightningPlug;
+import structural.adapter.iphone.TrsPlug;
 
 public class LightningToTrsAdapter implements LightningPlug {
 

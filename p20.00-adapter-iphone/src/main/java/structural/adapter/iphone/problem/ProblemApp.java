@@ -1,7 +1,7 @@
-package structural.adapter.problem;
+package structural.adapter.iphone.problem;
 
-import structural.adapter.IPhone;
-import structural.adapter.TrsHeadset;
+import structural.adapter.iphone.IPhone;
+import structural.adapter.iphone.TrsHeadset;
 
 public class ProblemApp {
 

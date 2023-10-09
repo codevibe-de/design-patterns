@@ -1,4 +1,4 @@
-package structural.adapter;
+package structural.adapter.iphone;
 
 public interface LightningPlug {
 
