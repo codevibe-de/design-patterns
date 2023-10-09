@@ -21,6 +21,7 @@
         <module>p10.40-builder</module>
         <module>p10.50-prototype</module>
         <module>p20.01-adapter-heizung</module>
+        <module>p20.10-bridge</module>
     </modules>
 
     <properties>
@@ -29,5 +30,18 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.28</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.7</version>
+        </dependency>
+    </dependencies>
 
 </project>
