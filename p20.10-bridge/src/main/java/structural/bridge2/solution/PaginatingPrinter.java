@@ -6,11 +6,6 @@ class PaginatingPrinter extends Printer {
         super(impl);
     }
 
-    @Override
-    public void print(Object content) {
-        impl.print(content.toString());
-    }
-
     public void addPageBreak() {
         impl.print("-------------------------------------------");
     }

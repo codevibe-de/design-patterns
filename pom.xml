@@ -20,7 +20,7 @@
         <module>p10.30-abstract_factory</module>
         <module>p10.40-builder</module>
         <module>p10.50-prototype</module>
-        <module>p20.01-adapter-heizung</module>
+        <module>p20.01-adapter-heater</module>
         <module>p20.10-bridge</module>
         <module>p20.20-composite</module>
         <module>p20.30-decorator</module>

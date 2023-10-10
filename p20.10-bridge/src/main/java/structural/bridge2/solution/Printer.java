@@ -1,21 +1,16 @@
 package structural.bridge2.solution;
 
-public abstract class Printer {
+// base of the "abstraction" hierarchy (within the BRIDGE design pattern)
+public class Printer {
 
-    protected PrintingImpl impl;
+    protected final PrintingImpl impl;
 
     public Printer(PrintingImpl impl) {
         this.impl = impl;
     }
 
-    public abstract void print(Object content);
-
-    public PrintingImpl getImpl() {
-        return impl;
-    }
-
-    public void setImpl(PrintingImpl impl) {
-        this.impl = impl;
+    public void print(Object content) {
+        this.impl.print(content.toString());
     }
 
 }
