@@ -10,7 +10,7 @@ public class SolutionApp {
         TrsHeadset headset = new TrsHeadset();
 
         phone.playAudioUsing(
-                new LightningToTrsAdapter(headset.getPlug())
+                new LightningToTrsAdapter(headset)
         );
     }
 

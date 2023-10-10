@@ -1,11 +1,9 @@
 package structural.adapter.iphone;
 
-public class TrsHeadset {
+public class TrsHeadset implements TrsPlug {
 
-    private TrsPlug plug;
-
-    public TrsPlug getPlug() {
-        return this.plug;
+    @Override
+    public void accept(byte[] audioBytes) {
+        // convert bytes to sound waves
     }
-
 }

@@ -9,6 +9,6 @@ public class ProblemApp {
         IPhone phone = new IPhone();
         TrsHeadset headset = new TrsHeadset();
 
-        // phone.playAudioUsing(headset.getPlug()); // doesn't work!
+        // phone.playAudioUsing(headset); // doesn't work!
     }
 }
