@@ -7,7 +7,7 @@ public class Application extends JFrame {
 
     public Application(String argType) {
         ComponentType componentType = ComponentType.valueOf(argType);
-        final ComponentFactory factory = Configuration.getComponentFactory(componentType);
+        final ComponentFactory factory = getComponentFactory(componentType);
 
         final JTextField textField = factory.createTextField(10);
         final JButton button = factory.createButton("press me");
@@ -21,7 +21,16 @@ public class Application extends JFrame {
         this.setVisible(true);
     }
 
+    public static ComponentFactory getComponentFactory(ComponentType componentType) {
+        return switch (componentType) {
+            case SIMPLE -> new SimpleComponentFactory();
+            case DEFAULT -> new DefaultComponentFactory();
+            case OVERDRESSED -> new OverdressedComponentFactory();
+        };
+    }
+
     public static void main(String[] args) {
+        // the first program-argument defines the family variant, e.g. "SIMPLE" or "DEFAULT"
         new Application(args.length == 0 ? ComponentType.DEFAULT.name() : args[0]);
     }
 }
