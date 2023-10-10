@@ -1,6 +1,6 @@
 package structural.adapter.heating;
 
-public class Thermostat {
+public class Thermostat implements Runnable {
 
     private final ThermostatListener listener;
 
@@ -8,6 +8,7 @@ public class Thermostat {
         this.listener = listener;
     }
 
+    @Override
     public void run() {
         // es ist zu kalt geworden
         this.listener.minAlarm();
