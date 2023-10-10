@@ -2,6 +2,7 @@ package creational.factory_method;
 
 import java.util.List;
 
+// This *concrete* creator also contains business logic, but focused on the concrete product.
 public class LetterDelivery extends PostalDelivery {
 
     @Override
@@ -10,7 +11,7 @@ public class LetterDelivery extends PostalDelivery {
         return new Letter(contents, postage);
     }
 
-    private int calculateLetterPostage(int weight) {
+    protected int calculateLetterPostage(int weight) {
         return weight * 10;
     }
 }

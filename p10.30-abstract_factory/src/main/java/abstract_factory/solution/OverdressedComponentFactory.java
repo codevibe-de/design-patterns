@@ -1,8 +1,8 @@
-package creational.abstract_factory.solution;
+package abstract_factory.solution;
 
 
-import creational.abstract_factory.components.OverdressedButton;
-import creational.abstract_factory.components.OverdressedTextField;
+import abstract_factory.components.OverdressedButton;
+import abstract_factory.components.OverdressedTextField;
 
 import javax.swing.*;
 

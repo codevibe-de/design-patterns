@@ -1,5 +1,6 @@
-package creational.abstract_factory.problem;
+package abstract_factory.problem;
 
+import abstract_factory.components.*;
 import creational.abstract_factory.components.*;
 
 import javax.swing.*;

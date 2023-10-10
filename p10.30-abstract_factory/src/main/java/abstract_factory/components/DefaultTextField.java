@@ -1,4 +1,4 @@
-package creational.abstract_factory.components;
+package abstract_factory.components;
 
 import javax.swing.*;
 

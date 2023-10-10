@@ -1,4 +1,4 @@
-package creational.abstract_factory.problem;
+package abstract_factory.problem;
 
 import javax.swing.*;
 import java.awt.*;

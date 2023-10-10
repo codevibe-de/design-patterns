@@ -1,4 +1,4 @@
-package creational.abstract_factory.solution;
+package abstract_factory.solution;
 
 import javax.swing.*;
 import java.awt.*;

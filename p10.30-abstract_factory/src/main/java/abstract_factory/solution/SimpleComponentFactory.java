@@ -1,7 +1,7 @@
-package creational.abstract_factory.solution;
+package abstract_factory.solution;
 
-import creational.abstract_factory.components.SimpleButton;
-import creational.abstract_factory.components.SimpleTextField;
+import abstract_factory.components.SimpleButton;
+import abstract_factory.components.SimpleTextField;
 
 import javax.swing.*;
 

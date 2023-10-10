@@ -2,6 +2,7 @@ package creational.factory_method;
 
 import java.util.List;
 
+// This is the abstract creator, which contains business logic.
 public abstract class PostalDelivery {
 
     public void send(List<String> contents) {
