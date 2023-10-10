@@ -1,0 +1,12 @@
+<!ELEMENT library (authors, books)>
+        <!ELEMENT books (book*)>
+        <!ELEMENT authors (author*)>
+        <!ELEMENT author (id, firstname, lastname)>
+        <!ELEMENT book (isbn, title, author-id, price)>
+        <!ELEMENT isbn (#PCDATA)>
+        <!ELEMENT id (#PCDATA)>
+        <!ELEMENT firstname (#PCDATA)>
+        <!ELEMENT lastname (#PCDATA)>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT author-id (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>

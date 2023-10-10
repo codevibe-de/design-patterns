@@ -29,6 +29,15 @@
         <module>p30.00-command</module>
         <module>p30.10-observer</module>
         <module>p30.20-visitor</module>
+        <module>p30.30-interpreter</module>
+        <module>util</module>
+        <module>p30.40-iterator</module>
+        <module>p30.50-memento</module>
+        <module>p30.60-template_method</module>
+        <module>p30.70-strategy</module>
+        <module>p30.75-mediator</module>
+        <module>p30.80-state</module>
+        <module>p30.90-chain_of_responsibility</module>
     </modules>
 
     <properties>

@@ -18,11 +18,11 @@ public class TraceHandler implements InvocationHandler {
         System.out.println(">> " + method.getName() + " " + Arrays.toString(parameters));
         try {
             Object result;
-			if (this.target instanceof InvocationHandler) {
-				result = ((InvocationHandler) this.target).invoke(proxy, method, parameters);
-			} else {
-				result = method.invoke(this.target, parameters);
-			}
+            if (this.target instanceof InvocationHandler) {
+                result = ((InvocationHandler) this.target).invoke(proxy, method, parameters);
+            } else {
+                result = method.invoke(this.target, parameters);
+            }
             System.out.println("<< " + method.getName() + " " + Arrays.toString(parameters)
                     + " --> " + result);
             return result;

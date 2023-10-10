@@ -18,16 +18,16 @@ public class Firma {
 
     public double getGesamtVerdienst() {
         double summe = 0;
-		for (final Mitarbeiter m : this.list) {
-			summe += m.getVerdienst();
-		}
+        for (final Mitarbeiter m : this.list) {
+            summe += m.getVerdienst();
+        }
         return summe;
     }
 
     public void iterate(MitarbeiterVisitor visitor) {
-		for (final Mitarbeiter m : this.list) {
-			m.accept(visitor);
-		}
+        for (final Mitarbeiter m : this.list) {
+            m.accept(visitor);
+        }
     }
 
 }

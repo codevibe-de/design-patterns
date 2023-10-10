@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<!DOCTYPE library SYSTEM "library.dtd">
+
+<library>
+    <authors>
+        <author>
+            <id>1000</id>
+            <firstname>Niklaus</firstname>
+            <lastname>Wirth</lastname>
+        </author>
+        <author>
+            <id>2000</id>
+            <firstname>Bertrand</firstname>
+            <lastname>Meyer</lastname>
+        </author>
+    </authors>
+    <books>
+        <book>
+            <isbn>11111</isbn>
+            <title>Modula</title>
+            <author-id>1000</author-id>
+            <price>2000</price>
+        </book>
+        <book>
+            <isbn>22222</isbn>
+            <title>Oberon</title>
+            <author-id>1000</author-id>
+            <price>3000</price>
+        </book>
+        <book>
+            <isbn>33333</isbn>
+            <title>Pascal</title>
+            <author-id>1000</author-id>
+            <price>4000</price>
+        </book>
+        <book>
+            <isbn>44444</isbn>
+            <title>Eiffel</title>
+            <author-id>2000</author-id>
+            <price>5000</price>
+        </book>
+    </books>
+</library>
