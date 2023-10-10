@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Client {
+    +main()
+}
+
+interface Subject {
+    +{abstract} operation()
+}
+
+Client -left-> Subject
+
+class RealSubject implements Subject {
+    +operation()
+}
+
+class ProxySubject implements Subject {
+    +operation()
+}
+ProxySubject -left-> RealSubject
+
+@enduml

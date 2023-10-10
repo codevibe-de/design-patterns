@@ -25,6 +25,7 @@
         <module>p20.20-composite</module>
         <module>p20.30-decorator</module>
         <module>p20.40-facade</module>
+        <module>p20.80-proxy</module>
     </modules>
 
     <properties>
