@@ -3,7 +3,6 @@ package structural.flyweight.solution;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.awt.*;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 

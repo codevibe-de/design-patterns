@@ -10,8 +10,9 @@ public class AccountGroup implements Account {
     @Override
     public double getBalance() {
         double sum = 0;
-        for (final Account account : this.children)
+        for (final Account account : this.children) {
             sum += account.getBalance();
+        }
         return sum;
     }
 
