@@ -23,6 +23,7 @@
         <module>p20.01-adapter-heizung</module>
         <module>p20.10-bridge</module>
         <module>p20.20-composite</module>
+        <module>p20.30-decorator</module>
     </modules>
 
     <properties>
