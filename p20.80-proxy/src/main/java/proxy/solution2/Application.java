@@ -6,7 +6,9 @@ import proxy.PlainMathService;
 public class Application {
 
     public static void main(String[] args) {
-        final MathService mathService = new MathServiceProxy(new TraceHandler(new PlainMathService()));
+        final TraceHandler handler  = new TraceHandler(new PlainMathService());
+
+        final MathService mathService = new MathServiceProxy(handler);
 
         final int sum = mathService.sum(40, 2);
         System.out.println(sum);

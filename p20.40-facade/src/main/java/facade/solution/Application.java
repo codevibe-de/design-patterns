@@ -13,14 +13,17 @@ public class Application {
         final List<String> inputLines = new ArrayList<>();
         final List<String> outputLines = new ArrayList<>();
 
+        // read lines
         try (final TextReader reader = new TextReader(inputFileName)) {
             for (final String line : reader) {
                 inputLines.add(line);
             }
         }
 
+        // process lines
         inputLines.forEach(line -> outputLines.add(line.toUpperCase()));
 
+        // write lines
         try (final TextWriter writer = new TextWriter(outputFileName)) {
             outputLines.forEach(line -> writer.writeln(line.length() + " : " + line));
         }

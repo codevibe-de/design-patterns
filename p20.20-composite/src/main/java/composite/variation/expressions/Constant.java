@@ -20,7 +20,7 @@ public class Constant implements Expression {
 
     @Override
     public Expression getChild(int index) {
-        throw new RuntimeException();
+        throw new UnsupportedOperationException();
     }
 
     @Override

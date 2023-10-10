@@ -17,7 +17,10 @@ public class Application {
     }
 
     static void demo1() {
-        final NumberFormatter f = new NumberFractionFormatter(2, new NumberFormatter());
+        final NumberFormatter f = new NumberFractionFormatter(
+                2,
+                new NumberFormatter()
+        );
         System.out.println(f.format(BigDecimal.valueOf(3)));
         System.out.println(f.format(BigDecimal.valueOf(3.1)));
         System.out.println(f.format(BigDecimal.valueOf(3.14)));
@@ -26,14 +29,23 @@ public class Application {
     }
 
     static void demo2() {
-        final NumberFormatter f = new NumberFillFormatter(10, '0', new NumberFormatter());
+        final NumberFormatter f = new NumberFillFormatter(
+                10, '0',
+                new NumberFormatter()
+        );
         System.out.println(f.format(BigDecimal.valueOf(3)));
         System.out.println(f.format(BigDecimal.valueOf(3.14)));
         System.out.println();
     }
 
     static void demo3() {
-        final NumberFormatter f = new NumberFillFormatter(10, '0', new NumberFractionFormatter(2, new NumberFormatter()));
+        final NumberFormatter f = new NumberFillFormatter(
+                10, '0',
+                new NumberFractionFormatter(
+                        2,
+                        new NumberFormatter()
+                )
+        );
         System.out.println(f.format(BigDecimal.valueOf(3)));
         System.out.println(f.format(BigDecimal.valueOf(3.14)));
         System.out.println(f.format(BigDecimal.valueOf(3.141)));
@@ -42,7 +54,13 @@ public class Application {
     }
 
     static void demo4() {
-        final NumberFormatter f = new NumberCurrencyFormatter(Currency.EURO, new NumberFractionFormatter(2, new NumberFormatter()));
+        final NumberFormatter f = new NumberCurrencyFormatter(
+                Currency.EURO,
+                new NumberFractionFormatter(
+                        2,
+                        new NumberFormatter()
+                )
+        );
         System.out.println(f.format(BigDecimal.valueOf(3)));
         System.out.println(f.format(BigDecimal.valueOf(3.14)));
         System.out.println(f.format(BigDecimal.valueOf(3.141)));

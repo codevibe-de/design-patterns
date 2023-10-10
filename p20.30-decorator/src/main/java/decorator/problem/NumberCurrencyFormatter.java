@@ -5,6 +5,7 @@ import decorator.NumberFormatter;
 
 import java.math.BigDecimal;
 
+// Outputs "1.23 €"
 public class NumberCurrencyFormatter extends NumberFormatter {
 
     private final Currency currency;

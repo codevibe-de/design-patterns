@@ -2,6 +2,7 @@ package proxy.solution;
 
 import proxy.MathService;
 
+// PROXY pattern
 public class MathServiceTraceProxy implements MathService {
 
     private final MathService target;
@@ -12,8 +13,11 @@ public class MathServiceTraceProxy implements MathService {
 
     @Override
     public int sum(int x, int y) {
+        // before invoke
         System.out.println(">> sum(" + x + ", " + y + ")");
+        // invoke
         final int result = this.target.sum(x, y);
+        // after invoke
         System.out.println("<< sum(" + x + ", " + y + ") --> " + result);
         return result;
     }

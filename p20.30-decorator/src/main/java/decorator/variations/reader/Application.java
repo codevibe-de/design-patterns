@@ -12,6 +12,13 @@ public class Application {
 
     static void demo1() throws IOException {
         final InputStream is1 = Application.class.getResourceAsStream("/numbers.txt");
+        final Reader r1 = new InputStreamReader(is1);
+        final BufferedReader br1 = new BufferedReader(r1);
+        System.out.println(br1.readLine());
+    }
+
+    static void demo1b() throws IOException {
+        final InputStream is1 = Application.class.getResourceAsStream("/numbers.txt");
         final InputStream is2 = new ByteArrayInputStream(new byte[]{65, 66, 67});
 
         final Reader r1 = new InputStreamReader(is1);
@@ -29,19 +36,11 @@ public class Application {
     }
 
     static void demo2() throws IOException {
-        final InputStream inStream = Application.class.getResourceAsStream("/numbers.txt");
-        final Reader r1 = new InputStreamReader(inStream);
-        final Reader r2 = new StringReader(" 123 45   3.14159265");
-
-        final NumberReader nr1 = new NumberReader(r1);
-        final NumberReader nr2 = new NumberReader(r2);
+        final Reader reader = new StringReader(" 123 45     3.14159265  ");
+        final NumberReader numberReader = new NumberReader(reader);
 
         Number number;
-        while ((number = nr1.readNumber()) != null) {
-            System.out.println(number + " (" + number.getClass().getSimpleName() + ")");
-        }
-        System.out.println();
-        while ((number = nr2.readNumber()) != null) {
+        while ((number = numberReader.readNumber()) != null) {
             System.out.println(number + " (" + number.getClass().getSimpleName() + ")");
         }
     }

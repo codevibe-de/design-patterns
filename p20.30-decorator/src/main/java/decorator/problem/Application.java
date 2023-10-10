@@ -6,7 +6,7 @@ import decorator.NumberFormatter;
 import java.io.IOException;
 import java.math.BigDecimal;
 
-
+// Problem: We cannot combine formatters -- what should we do? Create more formatter classes??
 public class Application {
 
     public static void main(String[] args) throws IOException {

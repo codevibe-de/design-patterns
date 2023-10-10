@@ -26,6 +26,9 @@
         <module>p20.30-decorator</module>
         <module>p20.40-facade</module>
         <module>p20.80-proxy</module>
+        <module>p30.00-command</module>
+        <module>p30.10-observer</module>
+        <module>p30.20-visitor</module>
     </modules>
 
     <properties>
@@ -42,9 +45,19 @@
             <version>1.18.28</version>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>2.0.7</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.7</version>
         </dependency>
     </dependencies>
 

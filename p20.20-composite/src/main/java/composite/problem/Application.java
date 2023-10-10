@@ -1,12 +1,12 @@
-package composite.solution1;
+package composite.problem;
 
 
 public class Application {
 
     public static void main(String[] args) {
         final AccountGroup topGroup = new AccountGroup();
-        final AccountGroup g1 = new AccountGroup();
-        final AccountGroup g2 = new AccountGroup();
+        final AccountGroup subGroup1 = new AccountGroup();
+        final AccountGroup subGroup2 = new AccountGroup();
 
         final SimpleAccount a11 = new SimpleAccount();
         final SimpleAccount a12 = new SimpleAccount();
@@ -17,24 +17,19 @@ public class Application {
         a21.deposit(3000);
         a22.deposit(4000);
 
-        topGroup.add(g1);
-        topGroup.add(g2);
-        g1.add(a11);
-        g1.add(a12);
-        g2.add(a21);
-        g2.add(a22);
+        subGroup1.add(a11);
+        subGroup1.add(a12);
+        subGroup2.add(a21);
+        subGroup2.add(a22);
 
+        // what's my OVERALL balance over both sub-groups?
         System.out.println("\ntopGroup.Balance");
         System.out.println(topGroup.getBalance());
-
-        System.out.println("\nPrint(topGroup)");
-        print(topGroup, "");
     }
 
     static void print(Account account, String indent) {
         System.out.println(indent + account.getBalance());
-        // this cast isn't very nice -- how can we improve that?
-        if (account instanceof AccountGroup group) {    // pattern matching
+        if (account instanceof AccountGroup group) {
             for (int i = 0; i < group.getChildCount(); i++) {
                 final Account child = group.getChild(i);
                 print(child, indent + "\t");

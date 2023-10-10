@@ -1,14 +1,12 @@
-package composite.solution1;
+package composite.problem;
 
 import java.util.ArrayList;
 import java.util.List;
 
-// COMPOSITE pattern -- `Account` represents the "Component" interface
-public class AccountGroup implements Account {
+public class AccountGroup {
 
     private final List<Account> children = new ArrayList<>();
 
-    @Override
     public double getBalance() {
         double sum = 0;
         for (final Account account : this.children) {

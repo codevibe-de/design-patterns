@@ -5,8 +5,8 @@ public class Application {
 
     // (5 - 2) + (10 ^ 2)
     public static void main(String[] args) {
-        final Expression sqr = new SquareExpression(new Constant(10));
         final Expression minus = new MinusExpression(new Constant(5), new Constant(2));
+        final Expression sqr = new SquareExpression(new Constant(10));
         final Expression plus = new PlusExpression(minus, sqr);
         System.out.println(plus.evaluate());
         print(plus, "");

@@ -2,9 +2,9 @@ package proxy.problem;
 
 public class Application {
 
+    // PROBLEM is that we combine two aspects in one class: the math stuff and the tracing
     public static void main(String[] args) {
         final TracingMathService mathService = new TracingMathService();
-        mathService.trace = true;
 
         final int sum = mathService.sum(40, 2);
         System.out.println(sum);

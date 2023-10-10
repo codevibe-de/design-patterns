@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Client {
+    +main()
+}
+
+interface Subject {
+    +{abstract} operation()
+}
+
+Client -left-> Subject
+
+class DynamicProxy implements Subject {
++operation()
+}
+
+class InvocationHandler {
++invoke()
+}
+
+class RealSubject implements Subject {
+    +operation()
+}
+
+DynamicProxy --> InvocationHandler
+
+InvocationHandler -right-> RealSubject
+
+@enduml

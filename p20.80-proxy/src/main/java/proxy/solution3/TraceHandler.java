@@ -1,4 +1,4 @@
-package proxy.solution2;
+package proxy.solution3;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
@@ -15,25 +15,20 @@ public class TraceHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] parameters) throws Throwable {
-        // before invoke
         System.out.println(">> " + method.getName() + " " + Arrays.toString(parameters));
-
-        // invoke
-        Object result;
         try {
-            if (this.target instanceof InvocationHandler) {
-                result = ((InvocationHandler) this.target).invoke(proxy, method, parameters);
-            } else {
-                result = method.invoke(this.target, parameters);
-            }
+            Object result;
+			if (this.target instanceof InvocationHandler) {
+				result = ((InvocationHandler) this.target).invoke(proxy, method, parameters);
+			} else {
+				result = method.invoke(this.target, parameters);
+			}
+            System.out.println("<< " + method.getName() + " " + Arrays.toString(parameters)
+                    + " --> " + result);
+            return result;
         } catch (final InvocationTargetException e) {
             throw e.getTargetException();
         }
-
-        // after invoke
-        System.out.println("<< " + method.getName() + " " + Arrays.toString(parameters)
-                + " --> " + result);
-        return result;
     }
 
 }

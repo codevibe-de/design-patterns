@@ -1,4 +1,4 @@
-package composite.solution2;
+package composite.problem;
 
 public class SimpleAccount implements Account {
 
@@ -15,16 +15,6 @@ public class SimpleAccount implements Account {
 
     public void withdraw(double value) {
         this.balance -= value;
-    }
-
-    @Override
-    public int getChildCount() {
-        return 0;
-    }
-
-    @Override
-    public Account getChild(int index) {
-        throw new UnsupportedOperationException();
     }
 
 }

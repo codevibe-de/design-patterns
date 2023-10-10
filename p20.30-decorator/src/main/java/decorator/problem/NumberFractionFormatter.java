@@ -4,6 +4,7 @@ import decorator.NumberFormatter;
 
 import java.math.BigDecimal;
 
+// Outputs: "1.1"
 public class NumberFractionFormatter extends NumberFormatter {
 
     private final int fraction;

@@ -4,6 +4,7 @@ import decorator.NumberFormatter;
 
 import java.math.BigDecimal;
 
+// Outputs: "0001.23"
 public class NumberFillFormatter extends NumberFormatter {
 
     private final int length;
