@@ -2,17 +2,18 @@ package template_method.solution;
 
 public class Application {
 
-    public static void main(String[] args) {
-        final String filename = "src/appl/Application.java";
+    public static final String RESOURCE_NAME = "/data.txt";
 
-        new PrintProcessor().run(filename);
+    // NOTE there is (intentionally) a bug in the FileProcessor class -- see EXERCISE.md
+    public static void main(String[] args) {
+        new PrintProcessor().run(RESOURCE_NAME);
 
         final CharCountProcessor ccp = new CharCountProcessor();
-        ccp.run(filename);
+        ccp.run(RESOURCE_NAME);
         System.out.println(ccp.getCount() + " characters");
 
         final LineCountProcessor lcp = new LineCountProcessor();
-        lcp.run(filename);
+        lcp.run(RESOURCE_NAME);
         System.out.println(lcp.getCount() + " lines");
     }
 }

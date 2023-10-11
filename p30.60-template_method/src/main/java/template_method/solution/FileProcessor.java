@@ -6,8 +6,8 @@ import java.io.InputStreamReader;
 public abstract class FileProcessor {
 
     // this is the TEMPLATE METHOD
-    final public void run(String filename) {
-        try (InputStreamReader reader = new InputStreamReader(new FileInputStream(filename))) {
+    final public void run(String resourceName) {
+        try (InputStreamReader reader = new InputStreamReader(new FileInputStream(resourceName))) {
             int ch = reader.read();
             this.initialize();  // hook
             while (ch != -1) {
