@@ -6,13 +6,17 @@ public class Application {
         final Participant meier = new Participant("Meier");
         final Participant mueller = new Participant("Mueller");
         final Participant franke = new Participant("Franke");
+
         meier.add(mueller);
         meier.add(franke);
+
         mueller.add(meier);
         mueller.add(franke);
+
         franke.add(meier);
         franke.add(mueller);
-        meier.send("Glueck");
+
+        meier.send("Glück");
         mueller.send("Glanz");
         franke.send("Ruhm");
     }

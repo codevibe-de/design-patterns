@@ -3,12 +3,10 @@ package startegy.solution;
 public class Application {
 
     public static void main(String[] args) {
-        final SimpleArrayList<String> list = new SimpleArrayList<>(0, new ReallocStrategy() {
-            @Override
-            public int newSize(int oldSize) {
-                return oldSize + 1;
-            }
-        });
+        final SimpleArrayList<String> list = new SimpleArrayList<>(
+                0,
+                oldSize -> oldSize + 1
+        );
         list.add("spring");
         list.add("summer");
         list.add("autumn");

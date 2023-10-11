@@ -11,6 +11,7 @@ public class Door {
         return this.currentState;
     }
 
+    // only package-private by design!
     void setState(State state) {
         System.out.println(this.currentState + " --> " + state);
         this.currentState = state;
@@ -23,4 +24,5 @@ public class Door {
     public void close() {
         this.currentState.close();
     }
+
 }

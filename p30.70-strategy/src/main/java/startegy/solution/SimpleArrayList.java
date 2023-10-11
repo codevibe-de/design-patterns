@@ -4,6 +4,7 @@ public class SimpleArrayList<T> {
 
     private T[] elements;
     private int size;
+
     private final ReallocStrategy strategy;
 
     private static final ReallocStrategy defaultStrategy = new ReallocStrategy() {

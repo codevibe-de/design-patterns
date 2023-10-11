@@ -10,4 +10,5 @@ public class OpenedState extends State {
     public void close() {
         this.door.setState(this.door.closedState);
     }
+
 }

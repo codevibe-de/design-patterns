@@ -1,8 +1,8 @@
 package state.solution;
 
 public class Application {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         final Door door = new Door();
         try {
             door.open();
@@ -10,7 +10,7 @@ public class Application {
             door.open();
             door.open();
         } catch (final IllegalStateException e) {
-            System.out.println(e.getMessage());
+            System.out.println("EXCEPTION: " + e.getMessage());
         }
     }
 }

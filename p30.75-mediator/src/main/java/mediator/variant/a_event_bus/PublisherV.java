@@ -7,7 +7,7 @@ public class PublisherV {
         this.eventBus = eventBus;
     }
 
-    public void pushlish() {
+    public void publish() {
         this.eventBus.send(new EventA(42));
         this.eventBus.send(new EventB("Hello"));
     }

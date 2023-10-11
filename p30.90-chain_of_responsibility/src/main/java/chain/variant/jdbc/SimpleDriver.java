@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 
 public class SimpleDriver implements Driver {
 
+    // this is being executed automatically when being loaded from classpath (Class.forName)
     static {
         try {
             DriverManager.registerDriver(new SimpleDriver());

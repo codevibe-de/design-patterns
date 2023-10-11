@@ -7,7 +7,7 @@ public class PublisherW {
         this.eventBus = eventBus;
     }
 
-    public void pushlish() {
+    public void publish() {
         this.eventBus.send(new EventC(2.71));
     }
 }

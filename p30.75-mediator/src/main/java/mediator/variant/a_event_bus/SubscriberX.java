@@ -6,6 +6,11 @@ public class SubscriberX {
 
     public SubscriberX(EventBus eventBus) {
 
+        eventBus.register(
+                EventA.class,
+                System.out::println
+        );
+
         eventBus.register(EventA.class, new Consumer<EventA>() {
             @Override
             public void accept(EventA e) {

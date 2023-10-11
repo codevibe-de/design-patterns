@@ -3,7 +3,6 @@ package mediator.variant.b_queue;
 public class Application {
 
     public static void main(String[] args) {
-
         final Queue<String> queue = new Queue<>();
 
         final Consumer consumer1 = new Consumer(queue);

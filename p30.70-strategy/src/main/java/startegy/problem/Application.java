@@ -8,6 +8,7 @@ public class Application {
         list.add("summer");
         list.add("autumn");
         list.add("winter");
+
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }

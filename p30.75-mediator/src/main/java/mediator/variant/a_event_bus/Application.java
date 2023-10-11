@@ -11,9 +11,7 @@ public class Application {
 
         final PublisherV v = new PublisherV(bus);
         final PublisherW w = new PublisherW(bus);
-
-        v.pushlish();
-        w.pushlish();
-
+        v.publish();
+        w.publish();
     }
 }
