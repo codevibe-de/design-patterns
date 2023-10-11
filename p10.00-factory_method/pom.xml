@@ -10,6 +10,6 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>p00.00-factory_method</artifactId>
+    <artifactId>p10.00-factory_method</artifactId>
 
 </project>
