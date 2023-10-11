@@ -10,7 +10,7 @@ public class LineCountProcessor extends FileProcessor {
 
     @Override
     protected void initialize() {
-        this.count = 0;
+        this.count = 1;
     }
 
     @Override
