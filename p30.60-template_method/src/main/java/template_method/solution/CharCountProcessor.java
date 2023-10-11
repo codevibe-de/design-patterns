@@ -17,4 +17,5 @@ public class CharCountProcessor extends FileProcessor {
     protected void process(char ch) {
         this.count++;
     }
+
 }

@@ -1,0 +1,6 @@
+Die Schablonenmethode (englisch template method pattern) ist ein in der Softwareentwicklung eingesetztes Entwurfsmuster,
+mit dem Teilschritte eines Algorithmus variabel gehalten werden können.
+
+Es gehört zur Kategorie der Verhaltensmuster (engl. behavioral patterns).
+
+Das Muster ist eines der sogenannten Viererbanden-Entwurfsmuster (GoF).

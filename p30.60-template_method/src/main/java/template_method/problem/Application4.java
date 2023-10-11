@@ -7,6 +7,7 @@ public class Application4 {
 
     public static void main(String[] args) {
         final String filename = "src/appl/Application1.java";
+
         try (InputStreamReader reader = new InputStreamReader(new FileInputStream(filename))) {
             int ch = reader.read();
             int count = 0;
