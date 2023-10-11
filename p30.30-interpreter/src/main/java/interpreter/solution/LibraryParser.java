@@ -12,7 +12,7 @@ public class LibraryParser {
         this.scanner = new XMLScanner(in);
     }
 
-    public void parse() {
+    public void parseLibrary() {
         this.scanner.start("library");
         this.parseAuthors();
         this.parseBooks();
