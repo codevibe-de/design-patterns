@@ -2,35 +2,36 @@ package iterator.variation.b_internal;
 
 import java.util.function.Consumer;
 
+@SuppressWarnings({"Convert2Lambda", "Convert2MethodRef"})
 public class Application {
 
     public static void main(String[] args) {
-        final SimpleArrayList<String> l1 = new SimpleArrayList<>();
-        l1.add("spring");
-        l1.add("summer");
-        l1.add("autumn");
-        l1.add("winter");
-        l1.forEach(new Consumer<String>() {
+        final SimpleArrayList<String> list1 = new SimpleArrayList<>();
+        list1.add("spring");
+        list1.add("summer");
+        list1.add("autumn");
+        list1.add("winter");
+        list1.forEach(new Consumer<String>() {
             @Override
             public void accept(String value) {
                 System.out.println(value);
             }
         });
-        l1.forEach(value -> System.out.println(value));
-        l1.forEach(System.out::println);
+        list1.forEach(value -> System.out.println(value));
+        list1.forEach(System.out::println);
 
-        final SimpleLinkedList<String> l2 = new SimpleLinkedList<>();
-        l2.add("spring");
-        l2.add("summer");
-        l2.add("autumn");
-        l2.add("winter");
-        l2.forEach(new Consumer<String>() {
+        final SimpleLinkedList<String> list2 = new SimpleLinkedList<>();
+        list2.add("spring");
+        list2.add("summer");
+        list2.add("autumn");
+        list2.add("winter");
+        list2.forEach(new Consumer<String>() {
             @Override
             public void accept(String value) {
                 System.out.println(value);
             }
         });
-        l2.forEach(value -> System.out.println(value));
-        l2.forEach(System.out::println);
+        list2.forEach(value -> System.out.println(value));
+        list2.forEach(System.out::println);
     }
 }

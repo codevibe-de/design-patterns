@@ -4,6 +4,7 @@ import java.util.function.Consumer;
 
 
 public class Node<T extends Comparable<T>> {
+
     private Node<T> left;
     private Node<T> right;
     private final T value;

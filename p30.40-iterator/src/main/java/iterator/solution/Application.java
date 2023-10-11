@@ -6,19 +6,19 @@ import java.util.Iterator;
 public class Application {
 
     public static void main(String[] args) throws Exception {
-        final SimpleArrayList<String> l1 = new SimpleArrayList<>();
-        l1.add("spring");
-        l1.add("summer");
-        l1.add("autumn");
-        l1.add("winter");
-        print(l1.iterator());
+        final SimpleArrayList<String> list1 = new SimpleArrayList<>();
+        list1.add("spring");
+        list1.add("summer");
+        list1.add("autumn");
+        list1.add("winter");
+        print(list1.iterator());
 
-        final SimpleLinkedList<String> l2 = new SimpleLinkedList<>();
-        l2.add("spring");
-        l2.add("summer");
-        l2.add("autumn");
-        l2.add("winter");
-        print(l2.iterator());
+        final SimpleLinkedList<String> list2 = new SimpleLinkedList<>();
+        list2.add("spring");
+        list2.add("summer");
+        list2.add("autumn");
+        list2.add("winter");
+        print(list2.iterator());
     }
 
     private static <T> void print(Iterator<T> iter) {
