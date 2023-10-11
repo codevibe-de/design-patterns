@@ -5,7 +5,11 @@ import java.util.List;
 
 public class Calculator {
 
-    private final List<CalculatorObserver> observers = new ArrayList<>();
+    //
+    // OBSERVER pattern
+    //
+
+    private final List<CalculatorObserver> observers = new ArrayList<>();   // registry
 
     public void addCalculatorObserver(CalculatorObserver observer) {
         this.observers.add(observer);
@@ -15,24 +19,29 @@ public class Calculator {
         this.observers.remove(observer);
     }
 
+    private void dispatchCalculatorEvent(CalculatorEvent.Type type, int v) {
+        final CalculatorEvent e = new CalculatorEvent(this, type, v);
+        this.observers.forEach(observer -> observer.valueChanged(e));
+    }
+
+    //
+    // calculator business logic
+    //
+
     private int value;
 
     public void add(int v) {
         this.value += v;
-        this.fireValueChanged(CalculatorEvent.Type.ADD, v);
+        this.dispatchCalculatorEvent(CalculatorEvent.Type.ADD, v);
     }
 
     public void subtract(int v) {
         this.value -= v;
-        this.fireValueChanged(CalculatorEvent.Type.SUBTRACT, v);
+        this.dispatchCalculatorEvent(CalculatorEvent.Type.SUBTRACT, v);
     }
 
     public int getValue() {
         return this.value;
     }
 
-    private void fireValueChanged(CalculatorEvent.Type type, int v) {
-        final CalculatorEvent e = new CalculatorEvent(this, type, v);
-        this.observers.forEach(observer -> observer.valueChanged(e));
-    }
 }

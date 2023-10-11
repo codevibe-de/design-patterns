@@ -24,6 +24,6 @@ public class Application {
                 summe += m.getVerdienst();
             }
         }
-        System.out.println("Gesamntverdienst aller Gehaltsempfaenger = " + summe);
+        System.out.println("Gesamtverdienst aller Gehaltsempfänger = " + summe);
     }
 }
